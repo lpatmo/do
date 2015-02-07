@@ -4,10 +4,10 @@
 - Use the library ```json``` instead of ```simplejson```
 - ```python manage.py runserver``` is new in 1.7. 
 - https://github.com/etianen/django-herokuapp/tree/master/herokuapp/project_template/project_name <-- starter kit for django (thanks for sharing, David H.)
-- Also, "best practice" is to organize all "apps" under an "apps" folder? But this requires changing the BASE_DIR in settings.py. For example: ```
+- Also, "best practice" is to organize all "apps" under an "apps" folder? But this requires changing the BASE_DIR in settings.py. For example: 
+```
 import os, sys
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 APPS_DIR = os.path.join(BASE_DIR, 'apps')
 sys.path.insert(0, BASE_DIR)
 sys.path.insert(1, APPS_DIR)
